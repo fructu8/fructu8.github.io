@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fructu Pics · Max, photographer</title>
-<meta name="description" content="Live music, stage and circus, events, portraits and travel photography by Max (Fructu Pics). Based in Southampton, UK.">
+<title>Fructu Pics · Max, live music & event photographer</title>
+<meta name="description" content="Live music and event photography by Max (Fructu Pics): concerts, musicians, venues, club nights, cabaret and circus. Hampshire, UK.">
 <meta property="og:title" content="Fructu Pics · Max, photographer">
 <meta property="og:description" content="Live music, events, portraits and travel photography. Southampton, UK.">
-<meta property="og:image" content="img/cab091.jpg">
+<meta property="og:image" content="img/mars040.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -74,8 +74,8 @@ h2{font-size:clamp(26px,3vw,38px);letter-spacing:-.025em;line-height:1.1;font-we
 .sub{color:var(--ink-2);margin-top:8px;max-width:60ch}
 
 /* collections */
-.collections{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:28px}
-.coll{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;cursor:pointer;border:0;padding:0;background:#000;text-align:left;color:#fff;font:inherit}
+.collections{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.coll{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;cursor:pointer;border:0;padding:0;background:#000;text-align:left;color:#fff;font:inherit}
 .coll img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .coll:hover img{transform:scale(1.05)}
 .coll::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.7))}
@@ -167,14 +167,14 @@ body.picking .tile .cap{opacity:1;font-weight:600}
 </header>
 
 <div class="hero">
-  <img id="heroImg" src="img/cab091.jpg" alt="">
+  <img id="heroImg" src="img/mars040.jpg" alt="">
   <div class="wrap">
-    <h1>Fire, light and noise, caught in the moment.</h1>
-    <p>I'm Max, a photographer based in Southampton, UK. Concerts, circus and cabaret, film sets, portraits and the road in between.</p>
+    <h1>Live music and events, shot the way the night felt.</h1>
+    <p>I'm Max, a live music and event photographer based in Hampshire, UK. Gigs, venues, club nights, cabaret and circus, and the artists behind them.</p>
     <label class="search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input type="search" placeholder="Search my photos: fire, aerialist, crowd, mountains…" aria-label="Search photos" data-search></label>
+      <input type="search" placeholder="Search my photos: singer, guitarist, DJ, crowd, fire…" aria-label="Search photos" data-search></label>
     <div class="trending">Popular:
-      <button data-q="fire">fire</button><button data-q="aerialist">aerialist</button><button data-q="sparks">sparks</button><button data-q="crowd">crowd</button><button data-q="black and white">black &amp; white</button><button data-q="mountains">mountains</button>
+      <button data-q="singer">singer</button><button data-q="guitarist">guitarist</button><button data-q="church">church venue</button><button data-q="crowd">crowd</button><button data-q="DJ">DJ</button><button data-q="fire">fire</button><button data-q="black and white">black &amp; white</button>
     </div>
   </div>
   <div class="credit" id="heroCredit"></div>
@@ -243,12 +243,12 @@ body.picking .tile .cap{opacity:1;font-weight:600}
 <script src="photos.js"></script>
 <script>
 const P = window.PHOTOS, $ = s => document.querySelector(s);
-const cats = ["All", "Stage & circus", "Live music", "Behind the scenes", "People", "Places"];
+const cats = ["All", "Concerts", "Stage & circus", "Musicians", "Venues & crowds", "Events & parties", "Behind the scenes", "Portraits", "Places"];
 let cat = "All", q = "", view = [], idx = 0;
 const ROW = () => innerWidth < 600 ? 150 : 240;
 
 // collections
-const covers = {"Stage & circus":"cab091","Live music":"mars040","Behind the scenes":"kyro074","People":"people-04","Places":"places-02"};
+const covers = {"Concerts":"mars040","Stage & circus":"cab091","Musicians":"x1024","Venues & crowds":"x3259","Events & parties":"x3435","Behind the scenes":"kyro074","Portraits":"x1830","Places":"places-02"};
 $("#collections").innerHTML = Object.entries(covers).map(([c,id]) =>
   `<button class="coll" data-cat="${c}"><img src="img/${id}-s.jpg" alt="" loading="lazy"><span>${c}<small>${P.filter(p=>p.cat===c).length} photos</small></span></button>`).join("");
 document.querySelectorAll(".coll").forEach(b => b.onclick = () => { setCat(b.dataset.cat); $("#gallery").scrollIntoView(); });
@@ -310,7 +310,7 @@ lb.onclick = e => e.target===lb && close();
 addEventListener("keydown", e => { if(!lb.classList.contains("open")) return; if(e.key==="Escape")close(); if(e.key==="ArrowLeft")open(idx-1); if(e.key==="ArrowRight")open(idx+1); });
 
 // rotating hero, like a stock homepage
-const heroes = ["cab091","mars040","cab042","kyro044","cab040","cab055","live-07"];
+const heroes = ["mars040","x3268","cab091","x3259","x1497","cab042","x3435","live-07"];
 let hi = 0; const hImg = $("#heroImg");
 function setHero(){ const p=P.find(x=>x.id===heroes[hi]); $("#heroCredit").textContent = p ? p.alt : ""; }
 setHero();
