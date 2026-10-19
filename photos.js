@@ -79,8 +79,8 @@ window.PHOTOS = [
  {
   "id": "p1035372",
   "cat": "Stage & circus",
-  "w": 720,
-  "h": 405,
+  "w": 576,
+  "h": 720,
   "alt": "A singer in horned headwear and stage make-up sings into the dark"
  },
  {
@@ -103,6 +103,27 @@ window.PHOTOS = [
   "w": 576,
   "h": 720,
   "alt": "A shower of green sparks falls over a performer"
+ },
+ {
+  "id": "p1064119",
+  "cat": "Concerts",
+  "w": 720,
+  "h": 480,
+  "alt": "A singer in a hat plays keys under blue stage light"
+ },
+ {
+  "id": "pana1274",
+  "cat": "Events & parties",
+  "w": 720,
+  "h": 540,
+  "alt": "A couple points at the camera on a packed dance floor"
+ },
+ {
+  "id": "p1000866",
+  "cat": "Venues & crowds",
+  "w": 480,
+  "h": 720,
+  "alt": "A band on a small club stage in the dark, the crowd in front"
  },
  {
   "id": "live-01",
@@ -931,13 +952,6 @@ window.PHOTOS = [
   "alt": "A dancer swirls a red feathered skirt"
  },
  {
-  "id": "x3059",
-  "cat": "Concerts",
-  "w": 720,
-  "h": 480,
-  "alt": "A keyboard player sings at his rig under blue stage light"
- },
- {
   "id": "cab133",
   "cat": "Stage & circus",
   "w": 720,
@@ -1020,5 +1034,54 @@ window.PHOTOS = [
   "w": 540,
   "h": 720,
   "alt": "A pianist lit violet inside a church"
+ },
+ {
+  "id": "pl297720",
+  "cat": "Places",
+  "w": 720,
+  "h": 540,
+  "alt": "Dog over a hazy valley"
+ },
+ {
+  "id": "pl297667",
+  "cat": "Places",
+  "w": 540,
+  "h": 720,
+  "alt": "A border collie on a red earth trail"
+ },
+ {
+  "id": "pl297641",
+  "cat": "Places",
+  "w": 540,
+  "h": 720,
+  "alt": "A banana flower among green leaves"
+ },
+ {
+  "id": "pl2732984",
+  "cat": "Places",
+  "w": 720,
+  "h": 540,
+  "alt": "Fog over a field on the Camino de Santiago"
+ },
+ {
+  "id": "pl3420604",
+  "cat": "Places",
+  "w": 720,
+  "h": 720,
+  "alt": "A rusty old pickup on a Southampton street"
+ },
+ {
+  "id": "pl5299391",
+  "cat": "Places",
+  "w": 720,
+  "h": 405,
+  "alt": "Aerial view of London and Tower Bridge"
+ },
+ {
+  "id": "pl2517332",
+  "cat": "Places",
+  "w": 720,
+  "h": 540,
+  "alt": "Fishing boats in a Menorca harbour"
  }
 ];
