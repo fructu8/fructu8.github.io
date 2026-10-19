@@ -244,7 +244,10 @@ body.picking .tile .cap{opacity:1;font-weight:600}
 </div>
 <div class="pickbar" id="pickbar"><span id="pickCount">0 selected</span><button class="clear" id="pickClear">Clear</button><button id="pickCopy">Copy list</button></div>
 
-<script src="photos.js"></script>
+<script>
+// Load the photo list fresh every visit, so removed or added photos show at once (GitHub Pages caches files).
+document.write('<script src="photos.js?v=' + Date.now() + '"><\/script>');
+</script>
 <script>
 const P = window.PHOTOS, $ = s => document.querySelector(s);
 const cats = ["All", "Concerts", "Stage & circus", "Musicians", "Venues & crowds", "Events & parties", "Behind the scenes", "Portraits", "Places"];
