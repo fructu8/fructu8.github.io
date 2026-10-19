@@ -137,6 +137,16 @@ footer{padding:32px 0 48px;color:var(--ink-2);font-size:14px;display:flex;justif
   .hero .search{height:54px}
   .lb .prev,.lb .next{top:auto;bottom:64px}
 }
+
+/* pick mode (?pick): choose photos to replace */
+.pickbar{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:40;display:none;gap:10px;align-items:center;background:#1b1b1b;color:#fff;padding:10px 12px 10px 18px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.35);font-size:15px;max-width:calc(100% - 32px)}
+body.picking .pickbar{display:flex}
+.pickbar button{background:#fff;color:#1b1b1b;border:0;border-radius:999px;padding:8px 14px;font:inherit;font-weight:600;cursor:pointer}
+.pickbar button.clear{background:transparent;color:#fff;border:1px solid #555}
+body.picking .tile{cursor:pointer}
+body.picking .tile .cap{opacity:1;font-weight:600}
+.tile.picked{outline:4px solid var(--accent);outline-offset:-4px}
+.tile.picked::after{content:"✓";position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800}
 </style>
 </head>
 <body>
@@ -228,6 +238,8 @@ footer{padding:32px 0 48px;color:var(--ink-2);font-size:14px;display:flex;justif
   <button class="next" aria-label="Next">›</button>
 </figure>
 
+<div class="pickbar" id="pickbar"><span id="pickCount">0 selected</span><button class="clear" id="pickClear">Clear</button><button id="pickCopy">Copy list</button></div>
+
 <script src="photos.js"></script>
 <script>
 const P = window.PHOTOS, $ = s => document.querySelector(s);
@@ -262,7 +274,28 @@ function render(){
     return `<button class="tile" data-i="${i}" style="flex:${r} 1 ${r*h}px;max-width:${r*h*1.8}px"><i style="display:block;padding-bottom:${100/r}%"></i><img src="img/${p.id}-s.jpg" alt="${p.alt}" loading="lazy"><span class="cap">${p.alt}</span></button>`;
   }).join("") : `<p class="empty">No photos match “${q}”. Try “singer” or “mountains”.</p>`;
   $("#count").textContent = `${view.length} photo${view.length===1?"":"s"}`;
-  document.querySelectorAll(".tile").forEach(t => t.onclick = () => open(+t.dataset.i));
+  document.querySelectorAll(".tile").forEach(t => {
+    const id = view[+t.dataset.i].id;
+    if (PICK) { t.classList.toggle("picked", picked.has(id)); t.querySelector(".cap").textContent = id; }
+    t.onclick = () => PICK ? togglePick(id, t) : open(+t.dataset.i);
+  });
+}
+
+// pick mode: add ?pick to the URL, tap photos, copy the list and send it to Claude
+const PICK = new URLSearchParams(location.search).has("pick");
+let picked = new Set();
+try { picked = new Set(JSON.parse(localStorage.getItem("picked") || "[]")); } catch (e) {}
+function savePick(){ try { localStorage.setItem("picked", JSON.stringify([...picked])); } catch (e) {} $("#pickCount").textContent = `${picked.size} selected`; }
+function togglePick(id, t){ picked.has(id) ? picked.delete(id) : picked.add(id); t.classList.toggle("picked", picked.has(id)); savePick(); }
+if (PICK) {
+  document.body.classList.add("picking"); savePick();
+  $("#pickClear").onclick = () => { picked.clear(); savePick(); render(); };
+  $("#pickCopy").onclick = async () => {
+    const txt = "Replace these photos: " + [...picked].join(", ");
+    try { await navigator.clipboard.writeText(txt); $("#pickCopy").textContent = "Copied ✓"; }
+    catch (e) { prompt("Copy this:", txt); }
+    setTimeout(() => $("#pickCopy").textContent = "Copy list", 1500);
+  };
 }
 let lastRow = ROW(); addEventListener("resize", () => { if (ROW()!==lastRow){ lastRow=ROW(); render(); } });
 
