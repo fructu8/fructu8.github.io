@@ -197,7 +197,7 @@ body.picking .tile .cap{opacity:1;font-weight:600}
   </section>
 
   <section class="wrap about" id="about">
-    <img src="img/people-02.jpg" alt="A camera operator lit in green behind the lens" loading="lazy">
+    <img src="img/kyro074.jpg" alt="A camera operator in a cap filming under pink light" loading="lazy">
     <div>
       <h2>Hi, I'm Max.</h2>
       <p>I shoot where things are happening: small stages and big ones, dance floors, film sets, and the hills and coastlines I pass on the way. I like strong light, real moments and colour that hits.</p>
@@ -248,7 +248,7 @@ let cat = "All", q = "", view = [], idx = 0;
 const ROW = () => innerWidth < 600 ? 150 : 240;
 
 // collections
-const covers = {"Stage & circus":"cab091","Live music":"mars040","Behind the scenes":"kyro074","People":"people-04","Places":"places-01"};
+const covers = {"Stage & circus":"cab091","Live music":"mars040","Behind the scenes":"kyro074","People":"people-04","Places":"places-02"};
 $("#collections").innerHTML = Object.entries(covers).map(([c,id]) =>
   `<button class="coll" data-cat="${c}"><img src="img/${id}-s.jpg" alt="" loading="lazy"><span>${c}<small>${P.filter(p=>p.cat===c).length} photos</small></span></button>`).join("");
 document.querySelectorAll(".coll").forEach(b => b.onclick = () => { setCat(b.dataset.cat); $("#gallery").scrollIntoView(); });
@@ -310,7 +310,7 @@ lb.onclick = e => e.target===lb && close();
 addEventListener("keydown", e => { if(!lb.classList.contains("open")) return; if(e.key==="Escape")close(); if(e.key==="ArrowLeft")open(idx-1); if(e.key==="ArrowRight")open(idx+1); });
 
 // rotating hero, like a stock homepage
-const heroes = ["cab091","mars040","cab042","kyro044","places-01","cab055","live-07"];
+const heroes = ["cab091","mars040","cab042","kyro044","cab040","cab055","live-07"];
 let hi = 0; const hImg = $("#heroImg");
 function setHero(){ const p=P.find(x=>x.id===heroes[hi]); $("#heroCredit").textContent = p ? p.alt : ""; }
 setHero();
