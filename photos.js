@@ -21,13 +21,6 @@ window.PHOTOS = [
   "alt": "A soul band and two singers in gold against a green-lit brick wall"
  },
  {
-  "id": "oj474",
-  "cat": "Events & parties",
-  "w": 720,
-  "h": 480,
-  "alt": "Wedding guests dance and film the band on a packed floor"
- },
- {
   "id": "p1313319",
   "cat": "Concerts",
   "w": 720,
@@ -140,13 +133,6 @@ window.PHOTOS = [
   "alt": "A fire performer spins inside a ring of sparks"
  },
  {
-  "id": "x4557",
-  "cat": "Musicians",
-  "w": 720,
-  "h": 480,
-  "alt": "A drummer in a tuxedo against a green-lit brick wall"
- },
- {
   "id": "x3259",
   "cat": "Venues & crowds",
   "w": 720,
@@ -224,13 +210,6 @@ window.PHOTOS = [
   "alt": "A performer sits at the edge of a stage under three spotlights"
  },
  {
-  "id": "places-03",
-  "cat": "Places",
-  "w": 720,
-  "h": 540,
-  "alt": "A bank of cloud rolling over green and ochre hills"
- },
- {
   "id": "live-03",
   "cat": "Concerts",
   "w": 540,
@@ -243,13 +222,6 @@ window.PHOTOS = [
   "w": 576,
   "h": 720,
   "alt": "A performer in silhouette reaches into green and white beams"
- },
- {
-  "id": "x1585",
-  "cat": "Musicians",
-  "w": 405,
-  "h": 720,
-  "alt": "A guitarist in a pinstripe jersey under red light"
  },
  {
   "id": "x3756",
@@ -273,13 +245,6 @@ window.PHOTOS = [
   "alt": "Silhouettes of a band against a blue screen"
  },
  {
-  "id": "x1830",
-  "cat": "Portraits",
-  "w": 480,
-  "h": 720,
-  "alt": "Black and white: a dancer posing on a studio floor"
- },
- {
   "id": "places-08",
   "cat": "Places",
   "w": 720,
@@ -292,13 +257,6 @@ window.PHOTOS = [
   "w": 480,
   "h": 720,
   "alt": "A singer with a fringe at the microphone, pink stage lights behind her"
- },
- {
-  "id": "x3262",
-  "cat": "Musicians",
-  "w": 540,
-  "h": 720,
-  "alt": "A guitarist in a bow tie grins in a church"
  },
  {
   "id": "x5276",
@@ -343,25 +301,11 @@ window.PHOTOS = [
   "alt": "An aerialist climbs a rope under green light"
  },
  {
-  "id": "x3310",
-  "cat": "Musicians",
-  "w": 540,
-  "h": 720,
-  "alt": "A guitarist plays a white Strat in a hotel ballroom"
- },
- {
   "id": "x942",
   "cat": "Venues & crowds",
   "w": 720,
   "h": 480,
   "alt": "A wide stage under blue beams"
- },
- {
-  "id": "x4493",
-  "cat": "Events & parties",
-  "w": 480,
-  "h": 720,
-  "alt": "A saxophonist plays among guests at a garden party"
  },
  {
   "id": "kyro075",
@@ -420,13 +364,6 @@ window.PHOTOS = [
   "alt": "A full band and singers under a gold-lit KYRO sign"
  },
  {
-  "id": "x338",
-  "cat": "Portraits",
-  "w": 480,
-  "h": 720,
-  "alt": "A performer in a suit glances at the camera in warm light"
- },
- {
   "id": "live-08",
   "cat": "Concerts",
   "w": 720,
@@ -448,32 +385,11 @@ window.PHOTOS = [
   "alt": "A guitarist sings with his head back under stage lights"
  },
  {
-  "id": "x3256",
-  "cat": "Venues & crowds",
-  "w": 720,
-  "h": 540,
-  "alt": "A performer with arms wide in a purple church"
- },
- {
-  "id": "x2633",
-  "cat": "Events & parties",
-  "w": 720,
-  "h": 480,
-  "alt": "A DJ smiles behind the decks"
- },
- {
   "id": "kyro034",
   "cat": "Behind the scenes",
   "w": 720,
   "h": 480,
   "alt": "Camera crew framing a shot in warm haze"
- },
- {
-  "id": "x5902",
-  "cat": "Portraits",
-  "w": 540,
-  "h": 720,
-  "alt": "A man's bare back facing a calm sea"
  },
  {
   "id": "live-09",
@@ -511,13 +427,6 @@ window.PHOTOS = [
   "alt": "Singers in sequins line up under warm stage light"
  },
  {
-  "id": "x5903",
-  "cat": "Portraits",
-  "w": 540,
-  "h": 720,
-  "alt": "A man smiling over his shoulder by the sea"
- },
- {
   "id": "live-10",
   "cat": "Concerts",
   "w": 474,
@@ -530,13 +439,6 @@ window.PHOTOS = [
   "w": 720,
   "h": 405,
   "alt": "A trumpet player points to the crowd under pink light"
- },
- {
-  "id": "x2264",
-  "cat": "Events & parties",
-  "w": 720,
-  "h": 480,
-  "alt": "A bartender pours under green light"
  },
  {
   "id": "kyro080",
@@ -609,34 +511,6 @@ window.PHOTOS = [
   "alt": "A pianist at the keys in a dark bar"
  },
  {
-  "id": "kyro069",
-  "cat": "Behind the scenes",
-  "w": 720,
-  "h": 480,
-  "alt": "A drummer laughs at the camera between takes"
- },
- {
-  "id": "live-13",
-  "cat": "Concerts",
-  "w": 720,
-  "h": 480,
-  "alt": "A guitarist in a tuxedo plays in front of a green-lit brick wall"
- },
- {
-  "id": "cab064",
-  "cat": "Stage & circus",
-  "w": 576,
-  "h": 720,
-  "alt": "A dancer in a red feathered headdress under pink light"
- },
- {
-  "id": "x3272",
-  "cat": "Musicians",
-  "w": 540,
-  "h": 720,
-  "alt": "A trumpet player in a church"
- },
- {
   "id": "x3017",
   "cat": "Events & parties",
   "w": 720,
@@ -651,25 +525,11 @@ window.PHOTOS = [
   "alt": "Singers in sequins wait on set under warm light"
  },
  {
-  "id": "live-14",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A musician in a bow tie plays under the vaulted ceiling of a purple-lit church"
- },
- {
   "id": "x1024",
   "cat": "Musicians",
   "w": 576,
   "h": 720,
   "alt": "A guitarist with a Les Paul under white beams"
- },
- {
-  "id": "x3242",
-  "cat": "Events & parties",
-  "w": 540,
-  "h": 720,
-  "alt": "Guests laugh with a band under chandeliers"
  },
  {
   "id": "live-15",
@@ -693,32 +553,11 @@ window.PHOTOS = [
   "alt": "A long-haired guitarist in red light"
  },
  {
-  "id": "x4553",
-  "cat": "Events & parties",
-  "w": 720,
-  "h": 480,
-  "alt": "A bass player under red and blue light"
- },
- {
-  "id": "live-16",
-  "cat": "Concerts",
-  "w": 480,
-  "h": 720,
-  "alt": "A saxophonist in a tuxedo plays under red light"
- },
- {
   "id": "cab091",
   "cat": "Stage & circus",
   "w": 720,
   "h": 720,
   "alt": "A performer with arms wide inside an explosion of sparks"
- },
- {
-  "id": "x3266",
-  "cat": "Musicians",
-  "w": 540,
-  "h": 720,
-  "alt": "A saxophonist in purple light"
  },
  {
   "id": "live-17",
@@ -756,32 +595,11 @@ window.PHOTOS = [
   "alt": "Black and white: two dancers whip their hair in hard light"
  },
  {
-  "id": "x5226",
-  "cat": "Musicians",
-  "w": 480,
-  "h": 720,
-  "alt": "A double bass player in a straw hat at a street festival"
- },
- {
-  "id": "mars021",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A rapper throws both arms up under green beams"
- },
- {
   "id": "x3132",
   "cat": "Musicians",
   "w": 720,
   "h": 540,
   "alt": "A drummer half hidden in blue haze"
- },
- {
-  "id": "mars027",
-  "cat": "Concerts",
-  "w": 720,
-  "h": 540,
-  "alt": "A rapper sings into a blue spotlight over the crowd"
  },
  {
   "id": "cab123",
@@ -868,13 +686,6 @@ window.PHOTOS = [
   "alt": "A performer in a storm of white sparks and smoke"
  },
  {
-  "id": "mars008",
-  "cat": "Concerts",
-  "w": 720,
-  "h": 540,
-  "alt": "Hands in the air across a packed crowd"
- },
- {
   "id": "cab016",
   "cat": "Stage & circus",
   "w": 576,
@@ -882,25 +693,11 @@ window.PHOTOS = [
   "alt": "An aerialist on a rope framed by fanning beams of light"
  },
  {
-  "id": "mars018",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A rapper silhouetted against a blinding green flare"
- },
- {
   "id": "cab035",
   "cat": "Stage & circus",
   "w": 720,
   "h": 480,
   "alt": "The full cast on stage under sweeping green lasers"
- },
- {
-  "id": "mars036",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A rapper in pink light, phones raised in the crowd"
  },
  {
   "id": "cab040",
@@ -924,25 +721,11 @@ window.PHOTOS = [
   "alt": "A stage flooded with teal beams around a lone performer"
  },
  {
-  "id": "x3268",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A singer in a bow tie belts into the mic under purple light"
- },
- {
   "id": "cab057",
   "cat": "Stage & circus",
   "w": 480,
   "h": 720,
   "alt": "An aerialist wrapped in red silks under a blue spotlight"
- },
- {
-  "id": "x3269",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A singer in a tuxedo reaches out under hot pink light"
  },
  {
   "id": "cab065",
@@ -973,20 +756,6 @@ window.PHOTOS = [
   "alt": "Three dancers strike a pose under green light"
  },
  {
-  "id": "x3306",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A young singer in green light"
- },
- {
-  "id": "x3309",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A singer with eyes closed under blue light"
- },
- {
   "id": "x3393",
   "cat": "Concerts",
   "w": 720,
@@ -1006,34 +775,6 @@ window.PHOTOS = [
   "w": 540,
   "h": 720,
   "alt": "A singer with his hand on his chest in a pub venue"
- },
- {
-  "id": "x4277",
-  "cat": "Concerts",
-  "w": 480,
-  "h": 720,
-  "alt": "A singer on a lit stage, band behind him"
- },
- {
-  "id": "x233",
-  "cat": "Concerts",
-  "w": 480,
-  "h": 720,
-  "alt": "A keyboard player in a floral shirt smiles on stage"
- },
- {
-  "id": "x3271",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A pianist under red and green light"
- },
- {
-  "id": "x3265",
-  "cat": "Concerts",
-  "w": 540,
-  "h": 720,
-  "alt": "A pianist lit violet inside a church"
  },
  {
   "id": "pl297720",

@@ -252,7 +252,7 @@ let cat = "All", q = "", view = [], idx = 0;
 const ROW = () => innerWidth < 600 ? 150 : 240;
 
 // collections
-const covers = {"Concerts":"mars040","Stage & circus":"cab091","Musicians":"x1024","Venues & crowds":"x3259","Events & parties":"x3435","Behind the scenes":"kyro074","Portraits":"x1830","Places":"places-02"};
+const covers = {"Concerts":"mars040","Stage & circus":"cab091","Musicians":"x1024","Venues & crowds":"x3259","Events & parties":"x3435","Behind the scenes":"kyro074","Portraits":"x1920","Places":"places-02"};
 $("#collections").innerHTML = Object.entries(covers).map(([c,id]) =>
   `<button class="coll" data-cat="${c}"><img src="img/${id}-s.jpg" alt="" loading="lazy"><span>${c}<small>${P.filter(p=>p.cat===c).length} photos</small></span></button>`).join("");
 document.querySelectorAll(".coll").forEach(b => b.onclick = () => { setCat(b.dataset.cat); $("#gallery").scrollIntoView(); });
@@ -319,7 +319,7 @@ lb.onclick = e => e.target===lb && close();
 addEventListener("keydown", e => { if(!lb.classList.contains("open")) return; if(e.key==="Escape")close(); if(e.key==="ArrowLeft")open(idx-1); if(e.key==="ArrowRight")open(idx+1); });
 
 // rotating hero, like a stock homepage
-const heroes = ["mars040","x3268","cab091","x3259","x1497","cab042","x3435","live-07"];
+const heroes = ["mars040","p1313319","cab091","x3259","x1497","cab042","x3435","live-07"];
 let hi = 0; const hImg = $("#heroImg");
 function setHero(){ const p=P.find(x=>x.id===heroes[hi]); $("#heroCredit").textContent = p ? p.alt : ""; }
 setHero();
