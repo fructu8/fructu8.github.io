@@ -30,7 +30,7 @@
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font:16px/1.5 "Inter Tight",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;-webkit-user-drag:none;user-select:none;-webkit-touch-callout:none}
 a{color:inherit}
 .wrap{max-width:1600px;margin:0 auto;padding:0 24px}
 
@@ -226,7 +226,7 @@ body.picking .tile .cap{opacity:1;font-weight:600}
 </main>
 
 <footer class="wrap">
-  <span>© <span id="yr"></span> Max · fructu.pics. All photos are mine. Please ask before using them.</span>
+  <span>© <span id="yr"></span> Max Fructuoso (@fructu_pics). All rights reserved. Photos may not be copied or used without written permission.</span>
   <a href="#top">Back to top ↑</a>
 </footer>
 
@@ -332,6 +332,9 @@ setInterval(() => { hi=(hi+1)%heroes.length; const n=new Image(); n.src=`img/${h
 const hdr = $("header");
 addEventListener("scroll", () => hdr.classList.toggle("scrolled", scrollY > innerHeight*.6), {passive:true});
 $("#yr").textContent = new Date().getFullYear();
+// Make copying awkward: no right-click or dragging on photos (a screenshot is always possible).
+document.addEventListener("contextmenu", e => { if (e.target.tagName === "IMG") e.preventDefault(); });
+document.addEventListener("dragstart", e => { if (e.target.tagName === "IMG") e.preventDefault(); });
 render();
 </script>
 </body>
